@@ -100,7 +100,7 @@ header .logo {
 
 @media screen and (max-width: 980px) {
     .content {
-        padding:2pt;
+        padding: 2pt;
         max-width: calc(100% - 3rem)
     }
 }
@@ -192,7 +192,8 @@ form label {
     form input {
         max-width: calc(100% - 3rem);
 
-    }}
+    }
+}
 
 a {
     text-decoration: none;
@@ -230,9 +231,9 @@ a {
 .gallery-box img {
     width: 284px;
     height: 189px;
-    box-shadow:rgb(160, 159, 159);
+    box-shadow: rgb(160, 159, 159);
     box-shadow: 5px 5px;
-    margin-bottom:2rem
+    margin-bottom: 2rem
 }
 
 
@@ -246,7 +247,7 @@ a {
 .wrapper-gallery {
     background-color: white;
     margin: 2rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     padding: 2rem
 }
 
@@ -274,4 +275,5 @@ a {
         display: block;
         padding: 0rem;
         margin: 0pt;
-    }}
+    }
+}
