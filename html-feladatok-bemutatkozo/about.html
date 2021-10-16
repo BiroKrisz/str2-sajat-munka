@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow" />
+    <title>About</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="/index.html" class="logo">
+            Biró Krsztián
+        </a>
+    </header>
+
+    <nav id="menu">
+        <ul class="links">
+            <li>
+                <a href="\index.html">Home</a>
+            </li>
+            <li>
+                <a href="\works.html">Works</a>
+            </li>
+            <li>
+                <a href="\gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="\about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="wrapper">
+        <section class="content-img">
+            <div class="next-to-img">
+                <img src="images/bk_03.jpg" alt="Biró Krisztián barista">
+            </div>
+            <div class="next-to-img">
+                <h1>Szia, Biró Krisztián vagyok,</h1>
+                <p>
+                    és 1994-ben születtem Miskolcon. Egy borsodi faluban, Kurityánban nőttem fel, 2013 óta Budapesten élek.
+                    Az ELTE magyar szakos hallgatója voltam, két évig dolgoztam baristaként és felszolgálóként a Panini Caféban,
+                    és 2019 decembere óta a Ronnefeldt Teaházban vagyok bolti eladó. 
+                </p>
+                <p>
+                    A legfontosabb hobbim a versírás, és rosszul is esik, hogy hobbinak kell neveznem, de hát több is veszett Mohácsnál.
+                    Emellett olyan vagyok, mint egy átlagos huszonéves: Red Dead Redemption 2, Witcher 3, Netflix, Spotify.
+                </p>
+                <p>Az informatikában még zöldfülű vagyok. A bátyám ugyan az Astronnál dolgozik senior szoftverfejlesztőként, 
+                    és mindig csodájára jártam annak, hogy mennyire bele lehet fáradni egy scriptbe (ilyen szempontból a programozás
+                    nagyon is közel áll a versíráshoz),
+                    engem mindössze egy évvel ezelőtt kezdett el foglalkoztatni ez a világ. A webfejlesztés felszínét az 
+                    <a href="https://www.training360.com/ujratervezes-program">Újratervezés program</a>
+                    keretein belül kapargatom.
+                </p>
+                <h3>Az alábbi nyelveken beszélek:</h3>
+                <ul>
+                    <li>
+                        magyar
+                    </li>
+                    <li>
+                        angol
+                    </li>
+                    <li>
+                        HTML5
+                    </li>
+                    <li>
+                        Python (jó, ez talán túlzás)
+                    </li>
+                
+                </ul>
+                <h3>Tudom, hogy nagyon érdekel, szóval a TOP3 ételem a következő:</h3>
+                <ol>
+                    <li>Palacsinta</li>
+                    <li>Magyaros szendvics</li>
+                    <li>Lorem ipsum</li>
+                  </ol>
+
+                  <p>Azt hiszem, az egyik legjobb tulajdonságom talán a határozottság, de komolyra fordítva a szót: kitartónak gondolom magam,
+                      már-már maximalistának, ha valamibe belevágok, azt be szoktam feje
+                  </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <form id="message_me">
+            <h3>Üzenj nekem valami rövidet!</h3>
+            (Csak legalább 20 karakter legyen! A csillaggal jelölt mezők kitöltése kötelező.)
+            <br>
+            <br>
+            <label for="name">Név: *</label>
+            <input type="text" id="uname" name="uname" minlength="5" placeholder="Citrom Jani" required>
+            <br>
+            <label for="name">E-mail: *</label>
+            <input type="email" id="email" name="email" placeholder="citromjanosom@gmail.com"
+                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+            <br>
+            <label for="name">Üzenet: *</label>
+            <input type="text" id="message" name="message" minlength="20" max="9999"
+                placeholder="Jó lesz ez, Krisztián, ki fogod bírni!" required>
+            <br>
+            <button type="submit" value="Submit">Elküld</button>
+        </form>
+
+        <button href="#top" onclick="self.scrollTo(0, 0); return false;">Vissza a lap tetejére</button>
+    </footer>
+
+</body>
+
+</html>
