@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A modal</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+  <h1>Ez lesz az első felugró ablakom</h1>
+
+  <main class="pointing_down">
+    <i class="fas fa-long-arrow-alt-down"></i>
+  </main>
+
+  <button id="modalButton" class="modal__button">kattints!</button>
+  <div id="modalWrapper" class="modal__background">
+    <div class="modal">
+      <header class="modal__header">
+        <span id="times" class="close__button">&times;</span>
+        <h3>Tádááááá</h3>
+      </header>
+      <section class="modal__content">
+        Az oldal készítője sütiket használ hajnali négy körül azért, hogy vissza tudjon aludni. Erre a szokására ugyan
+        nem büszke,
+        de szükséges lépésnek tartja.
+      </section>
+      <footer class="modal__footer">
+        <button class="submit__close submit__close--no">Az nem jó</button>
+        <button class="submit__close submit__close--yes">Átérzem</button>
+      </footer>
+    </div>
+  </div>
+
+</body>
+<script src="https://kit.fontawesome.com/3f06f73145.js" crossorigin="anonymous"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
