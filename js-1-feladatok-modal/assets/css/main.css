@@ -17,7 +17,7 @@ body {
     border: thin solid rgb(54, 161, 81);
     border-radius: 1rem;
     background-color: rgb(54, 161, 81);
-    color: #ffff;
+    color: rgb(255,255,255);
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -25,7 +25,7 @@ body {
 .modal__button:hover {
     filter: brightness(1.1);
     cursor: pointer;
-    border: thin solid white;
+    border: thin solid rgb(255,255,255);
 }
 
 .modalsubmit {
@@ -37,12 +37,12 @@ body {
 
 .modal {
     text-align: left;
-    background-color: white;
+    background-color: rgb(255,255,255);
     display: flex;
     flex-direction: column;
     align-self: center;
     padding: 1rem 1rem 1rem 2rem;
-    border: thin solid black;
+    border: thin solid rgb(0, 0, 0);
     border-radius: 1rem;
     width: 100%;
     height: 25% auto;
@@ -139,7 +139,7 @@ It should be done similarly to the .modalsubmit bit. */
     padding: 0.5rem;
     border: thin solid rgb(54, 161, 81);
     background-color: rgb(54, 161, 81);
-    color: #ffff;
+    color: rgb(255,255,255);
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -151,5 +151,5 @@ It should be done similarly to the .modalsubmit bit. */
 .submit__close:hover {
     filter: brightness(1.1);
     cursor: pointer;
-    border: thin solid white;
+    border: thin solid rgb(255,255,255);
 }
