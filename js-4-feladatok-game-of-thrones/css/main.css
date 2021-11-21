@@ -65,10 +65,10 @@ body {
 }
 
 .active {
-    transition: -webkit-transform 600ms;
-    transition: transform 600ms;
     -webkit-transform: translate3d(0, -8px, 0) rotate(45deg) scale(1.1, 1.1);
     transform: translate3d(0, -8px, 0) rotate(45deg) scale(1.1, 1.1);
+    transition: -webkit-transform 600ms;
+    transition: transform 600ms;
 }
 
 .card__img img {
@@ -100,10 +100,10 @@ body {
 
 .card__text {
     text-transform: uppercase;
-    font-size: .5rem;
+    font-size: 0.6rem;
     color: rgb(68, 39, 1);
     text-align: center;
-    padding: .2rem 0;
+    padding: 0.2rem 0;
     cursor: pointer
 }
 
@@ -147,7 +147,7 @@ body {
     padding: 1rem 0;
 }
 
-.bio__details-img>img {
+.bio__details-img > img {
     display: block;
     margin: auto;
     max-width: 100%;
@@ -242,7 +242,7 @@ body {
     float: left;
     border: none;
     cursor: pointer;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .bio__search input {
@@ -250,14 +250,14 @@ body {
     color: rgb(91, 91, 91);
     ;
     font-size: 1rem;
-    padding: .2rem .4rem;
+    padding: 0.2rem 0.4rem;
     line-height: 1.4rem;
     float: left;
 }
 
 .bio__search .fa-search {
     color: black;
-    padding: .2rem;
+    padding: 0.2rem;
     background-color: white;
     border: 1px solid white;
     line-height: 1.4rem;
