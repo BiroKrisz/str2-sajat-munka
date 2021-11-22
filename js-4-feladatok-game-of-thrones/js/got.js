@@ -38,7 +38,6 @@ function createCardElements(arr) {
 }
 
 function createArticle(char) {
-
     if (char) {
         charBio.innerHTML = `
     <div class="bio__details-img">
@@ -65,20 +64,20 @@ searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const searchedName = inputName.value;
 
-    fetch('../json/got.json') 
+    fetch('../json/got.json')
         .then(response => response.json())
         .then(allChar => {
             const searchArray = allChar.filter(char => char.name.toLocaleUpperCase() === searchedName.toLocaleUpperCase());
-    
-    /* Note: this way you can search for dead characters too. 
-    I think it's a cool feature, but if you don't want that to happen,
-    you can filter out the deceased characters after you parsed the data.*/
-            
-    if (searchArray) {
+
+            /* Note: this way you can search for dead characters too. 
+            I think it's a cool feature, but if you don't want that to happen,
+            you can filter out the deceased characters after you parsed the data.*/
+
+            if (searchArray) {
                 createArticle(searchArray[0]);
                 inputName.value = '';
             } else {
                 charBio.innerHTML = `<h1>Character not found</h1>`
             }
         })
-    })
+})
