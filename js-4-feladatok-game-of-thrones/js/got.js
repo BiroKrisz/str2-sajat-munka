@@ -3,7 +3,7 @@ const charBio = document.querySelector('.bio__details');
 const searchForm = document.querySelector('.bio__form');
 const inputName = document.querySelector('input');
 
-sortCharacters('../json/got.json')
+sortCharacters('json/got.json')
 
 async function sortCharacters(url) {
     const response = await fetch(url);
@@ -23,7 +23,7 @@ function createCardElements(arr) {
         charCard.classList.add('card');
         charCard.innerHTML = `
             <div class="card__img">
-                <img src="../${char.portrait}" alt="${char.name}">
+                <img src="${char.portrait}" alt="${char.name}">
             </div>
             <div class="card__text">${char.name}</div>
         `
@@ -42,15 +42,15 @@ function createArticle(char) {
         charBio.innerHTML = `
     <div class="bio__details-img">
     ${(char.picture) ?
-                `<img src="../${char.picture}" alt="${char.name}">` :
-                `<img src="../assets/placeholder.svg">`
+                `<img src="${char.picture}" alt="${char.name}">` :
+                `<img src="assets/placeholder.svg">`
             }
     </bio__details-img>
     <div class="bio__details-title">
         <span>${char.name}</span>
         ${(char.house || char.organization) ?
-                `<img src="../assets/houses/${char.house ? char.house : char.organization}.png" alt="${char.name}">` :
-                `<img src="../assets/placeholder.svg">`
+                `<img src="assets/houses/${char.house ? char.house : char.organization}.png" alt="${char.name}">` :
+                `<img src="assets/placeholder.svg">`
             }
     </div>
     <div class="bio__details-text">${char.bio}</div>
@@ -64,7 +64,7 @@ searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const searchedName = inputName.value;
 
-    fetch('../json/got.json')
+    fetch('json/got.json')
         .then(response => response.json())
         .then(allChar => {
             const searchArray = allChar.filter(char => char.name.toLocaleUpperCase() === searchedName.toLocaleUpperCase());
