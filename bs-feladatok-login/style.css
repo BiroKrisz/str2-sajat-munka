@@ -1,0 +1,32 @@
+body {
+    background-color: rgba(78, 30, 105, 0.08)
+}
+
+.logo {
+    display: flex;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgb(0,0,0);
+    background-color: rgba(78, 30, 105, 0.788);
+    z-index: 1;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    font-size: 3rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+.form-group {
+    width: 18rem
+}
+
+.logo, .btn-primary {
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgb(0,0,0);
+    background-color: rgba(78, 30, 105, 0.788);
+    border: thin solid rgb(78, 30, 105)
+}
+
+.logo:hover, .btn-primary:hover {
+    background-color: rgb(78, 30, 105);
+    border: thin solid rgb(78, 30, 105);
+    cursor: pointer;
+}
