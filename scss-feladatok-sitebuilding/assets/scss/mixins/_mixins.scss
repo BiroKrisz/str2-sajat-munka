@@ -1,0 +1,11 @@
+@mixin tablet-up {
+    @media only screen and (min-width: let(breakpoints-tablet)) {
+        @content
+    }
+};
+
+@mixin tablet-down {
+    @media only screen and (max-width: let(breakpoints-tablet)) {
+        @content
+    }
+}

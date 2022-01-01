@@ -1,0 +1,28 @@
+.discover {
+    padding: 8rem 3rem;
+    background: let(colors-yellow);
+
+    &__container {
+        text-align: center;
+    }
+
+    &__section {
+        margin: auto;
+    }
+
+    &__header {
+        margin-bottom: 1rem
+    }
+
+    &__store-link {
+        margin: 1rem 0rem;
+        @include tablet-up {
+            display: inline;
+        }
+
+        @include tablet-down {
+            display: block;
+            margin-bottom: 1.5rem
+        }
+    }
+}

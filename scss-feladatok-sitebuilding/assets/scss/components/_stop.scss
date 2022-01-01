@@ -1,0 +1,34 @@
+.stop-waiting {
+    position: relative;
+    background-image: $screen;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: let(colors-white);
+
+    @include tablet-up {
+        padding-left: 6rem;
+        padding-right: 3rem;
+    }
+
+    @include tablet-down {
+        padding-left: 0rem;
+    }
+
+    &__container {
+        position: relative;
+        padding-left: 3rem;
+        padding-bottom: 12rem;
+        padding-top: 12rem;
+        z-index: 1;
+    }
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

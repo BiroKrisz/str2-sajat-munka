@@ -1,0 +1,38 @@
+.unlimited {
+    padding: 3rem;
+    text-align: center;
+}
+
+.line {
+    background-color: let(colors-grey);
+    display: block;
+    max-width: 15%;
+    margin: auto;
+    min-height: 0.5px;
+    max-height: 1px;
+}
+
+.features {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
+    @include tablet-up {
+        margin-top: 3rem;
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+
+    &__row {
+        padding-top: 7.3rem;
+        @include tablet-up {
+            padding: 0;
+        }
+    }
+
+    &__item {
+        padding-bottom: 5rem;
+        @include tablet-up{
+            padding-bottom: 0;
+        }
+    }
+}

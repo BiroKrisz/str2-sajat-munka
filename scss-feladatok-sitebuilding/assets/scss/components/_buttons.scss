@@ -1,0 +1,24 @@
+.btn {
+    &-main {
+        color: let(colors-white);
+        text-transform: uppercase;
+        background-color: inherit;
+        border: 1px solid let(colors-white);
+        border-radius: 99rem;
+        font-size: 0.8rem;
+        line-height: 2.6rem;
+        padding: 0.2rem 2.5rem;
+        transition: border 0.3s ease-in, background-color 0.3s ease-in;
+
+        &:hover {
+            background-color: let(colors-yellow);
+            border: 1px solid let(colors-yellow);
+            color: let(colors-white);
+        }
+    };
+
+    &-border:hover {
+        background-color: let(colors-yellow);
+        border: 1px solid let(colors-yellow)
+    }
+}

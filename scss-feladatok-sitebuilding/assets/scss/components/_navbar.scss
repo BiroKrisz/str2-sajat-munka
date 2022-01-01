@@ -1,0 +1,64 @@
+.navbar {
+    position: fixed;
+    padding: 1rem 4rem;
+    top: 0;
+    width: 100%;
+
+    @include tablet-up {
+        padding: 1rem 20rem;
+    };
+
+    &-brand {
+        color: let(colors-yellow);
+        font-size: 1.6rem;
+
+        &:hover {
+            color: let(colors-white);
+            text-decoration: none;
+        }
+    };
+
+    &-link {
+        color: let(colors-grey);
+        padding: 0.5rem;
+        text-transform: uppercase;
+        
+        &:hover {
+            color: let(colors-white);
+            text-decoration: none;
+        }
+    };
+
+    &-toggler {
+        color: let(colors-black);
+        border: 0.2rem solid let(colors-grey);
+        padding: 0.8rem;
+    };
+
+    &-collapse {
+        justify-content: flex-end;
+    }
+};
+
+.sticky {
+    background-color: let(colors-white);
+    background-image: none;
+    z-index: 999;
+};
+
+.sticky .navbar {
+    &-brand:hover {
+        color: let(colors-darkerGrey);
+        text-decoration: none;
+    }
+
+    &-link {
+        color: let(colors-darkerGrey);
+        text-decoration: none;
+
+        &:hover {
+            color: let(colors-yellow);
+            text-decoration: none;
+        }
+    }
+};

@@ -1,0 +1,49 @@
+.phone {
+    position: absolute;
+    background-image: $phone;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    &__container {
+        max-width: 25rem;
+        padding: 0 2rem;
+        margin: auto;
+
+        &-inner {
+            position: relative;
+        }
+    }
+}
+
+.phone__container-inner.iphone {
+    padding-bottom: 200%;
+}
+
+.screen {
+    position: absolute;
+    top: 11%;
+    bottom: 11%;
+    left: 6%;
+    right: 6%;
+}
+
+.image__screen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.phone__col {
+    margin-top: 5rem;
+    @include tablet-up {
+        padding-top: 4rem;
+    }
+}

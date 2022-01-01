@@ -1,0 +1,21 @@
+.footer {
+    background-color: let(colors-footer);
+    color: let(colors-black);
+    padding: 3rem 0;
+    text-align: center;
+
+    & p {
+        color: let(colors-darkerGrey);
+        margin-bottom: 0.25rem;
+    }
+
+    &__link a {
+        color: let(colors-darkerGrey);
+        padding: 0 0.2rem;
+
+        &:hover {
+            color: let(colors-yellow);
+            text-decoration: none;
+        }
+    }
+}

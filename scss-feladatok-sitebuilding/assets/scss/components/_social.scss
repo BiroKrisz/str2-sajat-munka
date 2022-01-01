@@ -1,0 +1,9 @@
+.social-media {
+    padding: 4rem 2rem;
+    background: let(colors-yellow);
+    text-align: center;
+
+    &__container > nav {
+        justify-content: center;
+    }
+}

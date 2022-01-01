@@ -1,0 +1,36 @@
+.header__container {
+    background-image: $pattern, linear-gradient(to right, let(colors-gradientOne), let(colors-gradientTwo));
+    background-repeat: repeat;
+    color: let(colors-white);
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 0 5rem 0;
+
+    @include tablet-up {
+        padding-top: 2rem;
+    }
+}
+
+.title__header {
+    margin: 2rem 0;
+
+    @include tablet-up {
+        text-align: left;
+        padding-left: 6rem;
+        padding-top: 8rem;
+    }
+}
+
+.title__container {
+    @include tablet-up{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    };
+
+    &-inner {
+        text-align: center;
+        margin: auto;
+        padding-top: 2rem;
+    }
+}
