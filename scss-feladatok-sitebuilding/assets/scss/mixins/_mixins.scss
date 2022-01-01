@@ -8,4 +8,10 @@
     @media only screen and (max-width: let(breakpoints-tablet)) {
         @content
     }
+};
+
+@mixin mobile-down {
+    @media only screen and (max-width: let(breakpoints-mobile)) {
+        @content
+    }
 }
