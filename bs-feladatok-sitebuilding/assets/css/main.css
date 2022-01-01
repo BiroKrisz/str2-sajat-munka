@@ -124,6 +124,19 @@ p {
     }
 }
 
+@media (max-width: 400px) {
+    .navbar {
+        padding: 0.5rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .navbar {
+        padding: 0.2rem;
+    }
+}
+
 .navbar-brand {
     color: #fdcc52;
     font-size: 1.6rem;
