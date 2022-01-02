@@ -16,3 +16,7 @@ window.onscroll = function() {
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 300
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
